@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect"
+    href="https://fonts.google.com/specimen/Poppins?query=poppins&selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%235f6368#:~:text=the%20inherent%20dignity-,Regular%20400,-Whereas%20recognition%20of">
+<link rel="preconnect"
+    href="https://fonts.google.com/specimen/Poppins?query=poppins&selected=Material+Symbols+Outlined:menu:FILL@0;wght@400;GRAD@0;opsz@24&icon.size=24&icon.color=%235f6368#:~:text=the%20inherent%20dignity-,Bold%20700,-Whereas%20recognition%20of">
+    <style>
+        :root{
+            --bg-color:#081b29;
+            --second-bg-color:#112e42;
+            --text-color:#ededed;
+            --main-color:#00abf0;
+        }
+       body{
+        font-family: 'poppins', sans-serif;
+        background-color:var(--second-bg-color);
+       }
+       nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            /* background: var(--second-bg-color); */
+            position: relative;
+            z-index: 100;
+        }
+
+        .left {
+
+            margin: 0 -100px;
+            position: absolute;
+            left: 200px;
+            color: #00abf0;
+
+        }
+
+
+        nav img {
+            width: 50px;
+            border-radius: 1000px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            margin: 0 23px;
+            list-style: none;
+        }
+
+        nav ul li a:hover {
+            color:var(--main-color);
+            font-size: 1.04rem;
+
+
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-style: poppins;
+        }
+       
+        .about{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 0rem;
+            /* background: var(--second-bg-color); */
+            padding-bottom: 6rem;
+           
+           
+
+        }
+        .heading{
+            position: absolute;
+            top: 40px;
+            font-size: 5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: #ededed;
+        }
+        .heading span{
+            color: #00abf0;
+        }
+        .aboutimg{
+            position: relative;
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .aboutimg img{
+            width: 40%;
+            border-radius: 50%;
+            border: 5px solid var(--main-color);
+        }
+        .aboutimg .circle{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50% , -50%)rotate(0);
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            border-top: .2rem solid var(--second-bg-color);
+            border-bottom: .2rem solid var(--second-bg-color);
+            border-left: .2rem solid var(--main-color);
+            border-right: .2rem solid var(--main-color);
+        }
+        .content{
+            text-align: center;
+            color: #ededed;
+            position: absolute;
+            top: 410px;
+        }
+        .content h3{
+            font-size: 2.6rem;
+        }
+        .content p{
+            font-size: 1.6erem;
+            margin: 2rem 8rem 3rem;
+            /* border: 2px solid red; */
+        }
+        .btnbox{
+            position: absolute;
+            left: 20px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            width: 10.5rem;
+            height: 3rem;
+        }
+        .btnbox .btn{
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 15rem;
+            height: 100%;
+            border: 2px solid var(--main-color);
+            background: var(--main-color);
+            border-radius: 50px ;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            color: var(--bg-color);
+            text-decoration: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .btn:hover{
+            color: #00abf0;
+        }
+        .btnbox .btn::before{
+            background: var(--second-bg-color);
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            /* background: #00abf0; */
+            z-index: -1;
+            transition: .5s;
+        }
+        .btnbox .btn:hover::before{
+            width: 100%;
+        }
+        p span{
+            color: #00abf0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <img src="logo.jpg  " alt="">
+                <div class="head">Rishu's Portfolio</div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="port.html">HOME</a></li>
+                    <li><a href="">ABOUT ME</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="">CONTACT ME</a></li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+    <section class="about">
+        <h2 class="heading">ABOUT <span>ME</span></h2>
+        <div class="aboutimg">
+            <img src="logo.jpg" alt="">
+            <span class="circle"></span>
+        </div>  
+        <div class="content">
+            <h3>Web Developer!</h3>
+            <P>
+
+                "My name is Rishu Kumar, and I am a passionate web developer with experience in building responsive and dynamic websites. I specialize in creating user-friendly and accessible web applications using modern technologies."<br>If you want to know more about me please click <span>Read more</span></P>
+            <div class="btnbox">
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
